@@ -48,6 +48,7 @@ namespace Mining
             if (!miner.Mine(block, cts.Token)) return;
             Chain.Add(block);
 
+            Console.WriteLine("キーを押すと次のステップが始まります。 1/2");
             Console.ReadKey();
 
             //Second Block Mining
@@ -67,6 +68,7 @@ namespace Mining
             if(miner.Mine(block2)) return;
             Chain.Add(block2);
             Console.WriteLine(PrettyPrint(Serialize(Chain)));
+            Console.WriteLine("実行終了 2/2");
         }
     }
 }

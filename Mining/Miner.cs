@@ -22,7 +22,7 @@ namespace Mining
                 block.Nonce = nonce++;
                 block.Timestamp = DateTime.UtcNow;
                 var hash = block.ComputeId();
-                Console.Write("+");
+                Console.WriteLine(new HexString(hash).ToString());
                 if (!HashCheck(hash, target)) continue;
                 block.Id = new HexString(hash);
 

@@ -27,7 +27,7 @@ namespace Mining
             {
                 Amount = 10,
                 From = "Alice",
-                To = "AntiqueR",
+                To = "Anteccq",
                 Engrave = "絵画購入のため"
             };
             var tx2 = new Transaction()
@@ -55,9 +55,9 @@ namespace Mining
             var tx3 = new Transaction()
             {
                 Amount = 1,
-                From = "AntiqueR",
-                To = "KIT Developers Meetup",
-                Engrave = "初オンラインLT会記念"
+                From = "Anteccq",
+                To = "Engineers",
+                Engrave = "祝 LT 会"
             };
             var block2 = new Block()
             {
